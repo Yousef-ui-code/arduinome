@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arduinome | Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ar')">العربية</button>
+    <button onclick="setLanguage('fr')">Français</button>
+  </div>
+
+  <header>
+    <div class="logo">Arduinome</div>
+    <nav>
+      <a href="#projects" data-i18n="projects">Projects</a>
+      <a href="#tools" data-i18n="tools">Tools</a>
+      <a href="#about" data-i18n="about">About</a>
+      <a href="#contact" data-i18n="contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1 data-i18n="welcome">Welcome to Arduinome</h1>
+    <p data-i18n="desc">Free Arduino projects, tools, libraries, and multilingual support.</p>
+    <button class="cta-btn" onclick="startIntro()" data-i18n="tour">Take a Tour</button>
+  </section>
+
+  <section class="customizer" data-aos="fade-up">
+    <h2 data-i18n="customize">Choose Your Theme</h2>
+    <div class="colors">
+      <button onclick="changeColor('#00bcd4')">Blue</button>
+      <button onclick="changeColor('#e91e63')">Red</button>
+      <button onclick="changeColor('#4caf50')">Green</button>
+      <button onclick="changeColor('#9c27b0')">Purple</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Arduinome. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+  <script src="https://unpkg.com/i18next@21.6.4/dist/umd/i18next.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
